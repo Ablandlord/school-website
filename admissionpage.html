@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .logo img{
+                height: 50%;
+                margin: 10% -50%;
+                }
+            
+            .navbar{
+                background-color: white;
+                padding: 0 5%;
+                width: 100%;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .navbar ul{
+                list-style: none;
+                display: flex; 
+            }
+            .navbar ul li{
+                padding: 10px 30px;
+                position: relative;
+            }
+            .navbar ul li a{
+                text-decoration: none;
+                color: #0a0a0a;
+                font-size: 20px;
+                transition: all;
+            }
+            .navbar ul li a:hover{
+                color: rgb(248, 9, 9);
+            }
+            .fas{
+                float: right;
+                margin-left: 10px;
+                padding-top: 4px;
+            }
+            .dropdown-menu{
+                display: none;
+                color: #050505;
+                background-color: aqua;
+            }
+            .navbar ul li:hover .dropdown-menu{
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 100%;
+                background-color: rgb(143, 134, 134);
+            }
+            .navbar ul li:hover .dropdown-menu ul{
+                display: block;
+                margin: 10px;
+            }
+            .navbar ul li:hover .dropdown-menu ul li{
+                width: 150px;
+                padding: 10%;
+            }
+            .form{
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to right, #e3f11a35, #b3f736);
+            border-radius: 20px;
+            box-shadow: 4px 3px 5px 9px rgb(231, 132, 3);
+            margin:2% 25%;
+            font-family: cursive;
+            text-align: center;
+            }
+            input[type=text], [type=username], [type=password], select{
+            width: 20%;
+            height: 30%;
+            padding: 5px;
+            border-radius: 5px;
+            border: 2px solid #cccccc;
+            margin: 3px 2px;
+            box-sizing: border-box;
+            }
+            h1{
+            text-align: center;
+            color: rgb(7, 167, 15);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            button{
+            color: #0f0e0e;
+            font-weight: bold;
+            text-align: center;
+            width: 10%;
+            padding: 5px;
+            border-radius: 5px;
+            border: 2px solid #ccc;
+            margin: 3px 2px;
+            box-sizing: border-box;
+            background-color:rgb(230, 73, 73);
+            }
+            button:hover{
+             background-color: rgb(242, 245, 239);
+             }
+    </style>
+</head>
+<body>
+    <div class="banner" id="Top">
+        <div class="navbar">
+            <h1 class="logo"><img src="juniors logo.png" alt="juniors" /></h1>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                   
+                        <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>    
+        </div>
+    </div>
+    <br><br> 
+    <h1>Admission Registration Form</h1>
+    <div class="form">
+        <form action="successpage.html">
+            <label for="">First Name</label>
+            <br>
+            <input type="text" name="First Nmae"
+            placeholder="Enter your First Name" required>
+            <!--to validate the form use required where necessary-->
+            <br>
+            <br>
+            <label for="">MiddleName</label>
+            <br>
+            <input type="text" name="MiddleName" placeholder="Enter your MiddleName">
+            <br>
+            <br>
+            <label for="">LastName</label>
+            <br>
+            <input type="text" name="LastName" placeholder="Enter your LastName">
+            <br>
+            <br>
+            <label for="">D.O.B</label>
+            <br>
+            <input type="date" name="D.O.B">
+            <br>
+            <br>
+            <label for="">Gender</label>
+            <br>
+            Male: <input type="radio"
+             name="Gender" value="Male">
+            Female: <input type="radio"
+             name="Gender" value="Female">
+             <br>
+             <br>
+             <label for="">Nationality</label>
+             <br>
+             <select>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Canada">Canada</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Finland">Finland</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Bahrain">Bahrain</option>
+                <option value="Russia">Russia</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="England">England</option>
+             </select>
+             
+             <label for="">State</label>    
+             <select>
+                <option value="Abuja">Abuja</option>
+                <option value="Ontario">Ontario</option>
+                <option value="Zanzibar">Zanzibar</option>
+                <option value="Finland">Finland</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Bahrain">Bahrain</option>
+                <option value="Russia">Russia</option>
+                <option value="russel">Ukraine</option>
+                <option value="United Kingdom">United Kingdom</option>
+            </select><br>
+            <br>
+            <label for="">Address</label><br>
+            <textarea name="" id="" cols="50" rows="2">your address here</textarea><br>
+            <br>
+            <label for="">Email</label>
+            <input type="email" name="email"
+            placeholder="Enter you email">
+            <br>
+            <br>
+            <label for="">Password</label>
+            <input type="password" name="password" placeholder="Enter your password">
+            <br>
+            <br>
+            <label for="">Confirm Password</label>
+            <input type="Confirm password" name="Confirm password" placeholder="Re-enter your password" required>
+            <br>
+            <br>
+            <label for="">Class you are applying for</label>
+            <br>
+            <select>
+                <option value="PRY 1">PRY 1</option>
+                <option value="PRY 2">PRY 2</option>
+                <option value="PRY 3">PRY 3</option>
+                <option value="PRY 4">PRY 4</option>
+                <option value="PRY 5">PRY 5</option>
+                <option value="JSS 1">JSS 1</option>
+                <option value="JSS 2">JSS 2</option>
+                <option value="SSS 1">SSS 1</option>
+                <option value="SSS 2">SSS 2</option>
+             </select>
+             <br>
+             <br>
+            <label for="">Attach your passport photograph</label>
+                        <input type="file">
+                        <br>
+                        <br>
+            <button>Sign up</button>
+                    <p>Existing student
+                <a href="login.html">Login</a>
+            </p>
+
+        </form>
+    </div>
+</body>
+</html>

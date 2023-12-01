@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="banner" id="Top">
+    <div class="navbar">
+        <h1 class="logo"><img src="juniors logo.png" alt="juniors" width="150px"/></h1>
+        <div class="nav">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                
+                    <li><a href="#Academics">Academics<i class="fas fa-caret-down"></i></a><div class="dropdown-menu">
+                        <ul>
+                            <li> <a href="#Classes">Classes</a></li>
+                            <li> <a href="#Counselling">Counselling</a></li>
+                            <li> <a href="#FAQ">FAQ</a></li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li><a href="#Activities">Activities</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="button"><a href="admissionpage.html"><button>APPLY!</button></a></div>    
+    </div>
+</div> 
+<div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="juniors 1.jfif" style="width:100%">
+      <div class="text"></div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="juniors 2.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="juniors 3.jfif" style="width:100%">
+      <div class="text"></div>
+    </div>
+  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex> slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+    </script>
+    
+  <!-- learning section -->
+  <div class="container-learn" id="About">
+    <div class="left col-6">
+        <h1>Learning Begins <br> With Us</h1>
+        <p>We, at Juniors International School offer supportive and inspirational environments for young enquiring minds to learn and grow with us. 
+            Our passion for learning means we achieve more than outstanding results. 
+            We strive to build confident and creative thinkers and aim at delivering an education that is truly relevant to their future</p>
+        
+    </div>
+    <div class="right col-6">
+        ____________<br>
+            <br>
+        <p> We are an early learning academy focused on social-emotional development and early literacy and numeracy. 
+            Our students walk out with the character and confidence to make their mark in the world, 
+            equipped with the knowledge and real-world skills that take them way ahead in the industry they may serve.</p>
+            <br>
+            <br>
+        <button>Know more about us</button>
+    </div>
+
+    <div class="container-learn2" id="About">
+        <div class="center">
+            <h3>Juniors International School at a Glance</h3>
+            <br>
+            <br>
+            <h2>200+      40+    5+      100+</h2>
+            <h4>Current-Enrolments            Qualified-Staff           Clubs-&-Activities              Active-PTFA-Members</h4>
+            <br>
+            <br>
+            <br>
+            <img src="juniors 5.jpg" alt="juniors" width="800px">
+            <br>
+            <br>
+            <br>
+                    
+                <p>" We aim at inspiring our students to dream more, <br> learn more, 
+                    do more, and become more <br> in their respective journeys of life.</p> 
+                    <br>
+                    <br>
+            <h5>Folashade Abdulsalam — Headmistress</h5>      
+        </div>   
+        
+    </div>
+    <div class="container-learn3" id="Counselling">
+        <div class="left col-6">
+            <h6> Curriculum <br> Overview</h6>
+            
+            
+        </div>
+        <div class="right col-6">
+            __________
+                <br>
+                <br>
+                <p>Juniors International School aims at offering all our students a broad
+                 and balanced curriculum that provides rewarding and stimulating
+                  activities to prepare them for the best social and cultural life</p>
+                <br>
+                <br>
+        </div>
+    </div> 
+    <div class="item" id="Classes">
+        <img src="computer.jpg" alt="pix">
+        <h1>Computer Science</h1>
+        <p> We provide hands-on experience with the latest <br>
+             programming languages and technology</p>
+    </div>
+    <div class="item">
+        <img src="finearts.jpg" alt="pix">
+        <h1>Fine Arts</h1>
+        <p> We Give wings to our young artists providing <br>
+             expression for their creative genius</p>
+    </div>
+    <div class="item">
+        <img src="communityservice.jpg" alt="pix">
+        <h1>Community Service</h1>
+        <p> We take up noble causes and teach our pupils how <br>
+             to give back and be of service to their community</p>
+    </div>
+    <div class="container-learn4" id="Activities">
+        <div class="left col-6">
+            <img src="boxer.jpg" id="image" width="600px">
+        </div>
+        <div class="right col-6">
+            <b>Our Co-curricular</b>
+            <br>
+            <b>Activities</b>
+            <br>
+            <p>We are an early learning academy focused on social-emotional development and early literacy and numeracy. 
+                Our students walk out with the character and confidence to make their mark in the world, 
+                equipped with the knowledge and real-world skills that take them way ahead in the industry they may serve.</p>
+        <span>
+            <ul>
+                <li>Athletics</li>
+            </ul>
+        </span>
+            <p>Our students are passionate about sports and athletics 
+                and we ensure they have great experiences in learning them.</p>
+       <br>
+            <span>
+                    <ul>
+                        <li>Digital Literacy</li>
+                    </ul>
+            </span>
+                    <p>We provide the basics of digital literacy 
+                        which include animation, graphics design, video editing to name just a few.</p>
+                        <br>
+            <span>
+                    <ul>
+                        <li>Performing Arts & Music</li>
+                    </ul>
+            </span>
+                    <p>With professionals on board, 
+                        we take pride in training our students in art forms like dance, 
+                        drama, painting and more</p>    
+        </div>        
+        <div class="card">
+            <div class="product" id="FAQ">
+                <c>__________</c>
+                <br>
+                <br>
+                <br>
+                <c> Wish to know more about admissions and </c>
+                <br>
+                <c>updates? Subscribe now!</c>       
+            </div>
+        </div>
+        <div class="card">
+            <div class="juniors">
+                <d>Juniors International School</d>
+                <p>No 3a Danmadami Close Off Degel 2, Ungwan Rimi, Kaduna</p>
+                
+        
+            </div>
+                <div class="juniors2" id="Contact">
+                    <d>Main Office</d>
+                    <p>09072222254, 07035988278
+                        <br>
+                        8:00 a.m. – 4:00 p.m.</p>
+                    
+            
+                </div>
+                    <div class="juniors3" id="Contact">
+                        <d>Email</d>
+                        <p>info@juniorsinternational.com</p>
+                    </div>
+        
+        </div>
+        
+        <div class="bottom">
+            <div class="navbar">
+                <h1 class="logo"><img src="juniors logo.png" alt="juniors" width="150px"/></h1>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        
+                            <li><a href="#">Academics<i class="fas fa-caret-down"></i></a><div class="dropdown-menu">
+                                <ul>
+                                    <li> <a href="#Classes">Classes</a></li>
+                                    <li> <a href="#Counselling">Counselling</a></li>
+                                    <li> <a href="#FAQ">FAQ</a></li>
+                                </ul>
+                            </div>
+                            </li>
+                            <li><a href="#Activities">Activities</a></li>
+                            <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                
+                        <br>
+                        <br>    
+                    <div class="social">
+                        <ul>
+                            <li><img src="phone.webp" alt="juniors" width="20px"/></li>        
+                            <li><img src="twitter.jfif" alt="juniors" width="20px"/></li>
+                            <li><img src="linkedin.jfif" alt="juniors" width="20px"/></li>        
+                            <li><img src="instagram.jfif" alt="juniors" width="20px"/></li>        
+                        </ul>            
+                   </div>
+                </div>
+            </div>
+          </div>
+        </div> 
+        <footer>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>Copyright © 2023 Juniors International | Powered by <span>Sunny Kingsley Bala.</span> </p>
+            <br>
+            <br>
+            
+            <br>
+            
+        </footer>
+</html>
